@@ -1,0 +1,206 @@
+.app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 400px;
+    padding: 20px;
+}
+
+label{
+    font-weight:bolder;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input, select{
+    font-size: x-large;
+}
+
+button{
+    background-color: #0b58ff;
+    font-weight: 800;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px #0b58ff;
+}
+
+button:hover{
+    background-color: hsl(221, 100%, 45%);
+}
+
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.table-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+
+  th:last-child,
+  td:last-child {
+  width: 100px;
+  padding: 8px 5px;
+}
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #660606;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .delete-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }
+
+  .delete-button:active {
+    box-shadow: 2px 2px 5px #cc0000;
+  }
+
+  .btn-container{
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal title */
+.modal-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Form labels and inputs */
+.modal-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.modal-container input,
+.modal-container select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-buttons button[type="button"] {
+  background: #ccc;
+  color: #333;
+}
+
+.modal-buttons button[type="submit"] {
+  background: #2caeba;
+  color: #fff;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
